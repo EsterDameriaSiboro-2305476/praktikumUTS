@@ -9,7 +9,7 @@ package ester2305476.utspraktikum;
  * @author ASUS Vivobook
  */
 public class balok {
-     private int panjang;
+    private int panjang;
     private int lebar;
     private int tinggi;
 
@@ -17,6 +17,18 @@ public class balok {
         this.panjang = panjang;
         this.lebar = lebar;
         this.tinggi = tinggi;
+    }
+
+    public int getPanjang() {
+        return panjang;
+    }
+
+    public int getLebar() {
+        return lebar;
+    }
+
+    public int getTinggi() {
+        return tinggi;
     }
 
     public int getLuas() {
@@ -29,14 +41,5 @@ public class balok {
 
     public int getVolume() {
         return panjang * lebar * tinggi;
-    }
-
-    public void cetakInfo() {
-        System.out.println("Balok dengan panjang: " + this.panjang +
-                ", lebar: " + this.lebar +
-                " dan tinggi: " + this.tinggi +
-                ". Luasnya: " + getLuas() +
-                ", kelilingnya: " + getKeliling() +
-                " dan volumenya: " + getVolume());
     }
 }
